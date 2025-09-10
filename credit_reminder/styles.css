@@ -1,0 +1,149 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #d9fdf8;
+  padding: 2rem;
+  color: #333;
+}
+
+.form-container {
+  background: #d6d3f0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#appHeader {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f5f7fa;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+#appHeader h1 {
+  font-size: 2.5rem;
+  color: #4a4a4a;
+  margin: 0.5rem 0;
+  font-weight: 700;
+}
+
+#appHeader p {
+  font-size: 1rem;
+  color: #6b6b6b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+form label {
+  flex: 1 1 150px;
+  font-weight: bold;
+}
+
+form input {
+  flex: 1 1 200px;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #8dc6f2;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#verTarjetas {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.saved-cards {
+  margin-top: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+#cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+  position: relative;
+  line-height: 1.6;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+input[type="color"] {
+  width: 60px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="color"]:hover {
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 600px) {
+  form .row {
+    flex-direction: column;
+  }
+
+  form label, form input {
+    flex: 1 1 100%;
+  }
+
+  #cardsContainer {
+    grid-template-columns: 1fr;
+  }
+}

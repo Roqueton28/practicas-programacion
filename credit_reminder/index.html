@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Record-Cred</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="main.js" defer></script>
+</head>
+<body>
+  <header id="appHeader">
+    <h1>CREDIT Reminder</h1>
+    <p>Recordatorio de pago para líneas de crédito: organiza, visualiza y mantén tus finanzas bajo control.</p>
+  </header>
+
+  <section class="form-container">
+    <h2>Agregar línea de Crédito</h2>
+    <form id="cardForm">
+      <div class="row">
+        <label for="bankName">Nombre del banco:</label>
+        <input type="text" id="bankName" autocomplete="organization" required />
+
+        <label for="lastDigits">Últimos 4 dígitos:</label>
+        <input type="text" id="lastDigits" maxlength="4" required />
+      </div>
+
+      <div class="row">
+        <label for="expiryDate">Fecha de vencimiento:</label>
+        <input type="month" id="expiryDate" required />
+
+        <label for="cutDay">Día de corte:</label>
+        <input type="number" id="cutDay" min="1" max="31" required />
+
+        <label for="payDay">Día de pago:</label>
+        <input type="number" id="payDay" min="1" max="31" required />
+
+        <label for="reminderDays">Recordatorio (días previos):</label>
+        <input type="number" id="reminderDays" min="1" required />
+      </div>
+
+      <div class="row">
+        <label for="email">Correo (email):</label>
+        <input type="email" id="email" autocomplete="email" required />
+      </div>
+
+      <div class="row">
+        <label for="bgColor">Color de fondo:</label>
+        <input type="color" id="bgColor" name="bgColor" />
+
+        <label for="textColor">Color de texto:</label>
+        <input type="color" id="textColor" name="textColor" />
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit">Guardar</button>
+        <button type="button" id="verTarjetas">Visualizar</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="saved-cards">
+    <h3>Tarjetas Guardadas</h3>
+    <div id="cardsContainer"></div>
+  </section>
+</body>
+</html>
