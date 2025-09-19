@@ -27,6 +27,7 @@ h4 {
 }
 
 div span {
+    display: flex;
     background-color: rgb(174, 226, 189);
     color: blueviolet;
 }
@@ -54,6 +55,10 @@ div span {
 
 .clase1 p:hover, .clase3 p:hover, .clase3 h3:hover, .clase2 span:hover {
     color: white;
+}
+
+.clase5 {
+    margin: 100px;
 }
 
 .class-button {
@@ -85,13 +90,15 @@ div span {
 }
 
 .img-container {
-    width: 130px;
-    height: 180px;
+    width: 250px;
+    height: 380px;
     background-image: url(off.jpg);
+    background-repeat: no-repeat;
 }
 
 .img-container:hover {
-    width: 130px;
-    height: 180px;
+    width: 250px;
+    height: 380px;
     background-image: url(on.jpg);
+    background-repeat: no-repeat;
 }
