@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Artículos</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab-button active" data-tab="buscar"> Buscar</button>
+    <button class="tab-button" data-tab="agregar"> Agregar</button>
+    <button class="tab-button" data-tab="personalizar"> Personalizar</button>
+  </div>
+
+  <div class="tab-content active" id="buscar">
+    <h2>Buscar / Actualizar</h2>
+    <form>
+      <label>ID del artículo:</label>
+      <input type="text" id="buscar-id" />
+      <button type="button" class="buscar-btn">Buscar</button>
+      <div class="resultado">
+        <!-- Aquí se mostrarán los datos -->
+        <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+        <p><strong>Cantidad:</strong> <span id="cantidad"></span></p>
+        <p><strong>Precio:</strong> <span id="precio"></span></p>
+      </div>
+      <button type="button" class="borrar-btn">🗑️ Borrar</button>
+    </form>
+  </div>
+
+  <div class="tab-content" id="agregar">
+    <h2>Agregar Artículo</h2>
+    <form id="form-agregar">
+      <label>Fecha de entrada:</label>
+      <input type="date" id="fecha" />
+      <label>ID:</label>
+      <input type="text" id="id" />
+      <label>Nombre del artículo:</label>
+      <input type="text" id="nombre-articulo" />
+      <label>Cantidad:</label>
+      <input type="number" id="cantidad-articulo" />
+      <label>Precio:</label>
+      <input type="number" id="precio-articulo" step="0.01" />
+      <button type="submit" class="enviar-btn">Enviar</button>
+    </form>
+    <div class="rejilla">
+      <!-- Aquí se mostrarán los artículos agregados -->
+    </div>
+  </div>
+
+  <div class="tab-content" id="personalizar">
+    <h2>Personalizar Estilo</h2>
+    <form>
+      <label>Color de fondo:</label>
+      <input type="color" id="fondo-color" />
+      <label>Color de texto:</label>
+      <input type="color" id="texto-color" />
+      <div class="preview">
+        <p>Vista previa de colores seleccionados</p>
+      </div>
+      <button type="button" class="aplicar-btn">Aplicar</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
