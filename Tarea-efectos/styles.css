@@ -1,0 +1,325 @@
+body .banner h1 {
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    margin: 20px;
+}
+
+.face1 {
+    position: relative;
+    height: 320px;
+    border: solid 1px black;
+}
+
+.face2 {
+    position: relative;
+    height: 320px;
+    border: solid 1px black;
+}
+
+.ojo1 {
+      position: absolute;
+      top: 110Px; /* Adjust as needed */
+      left: 80px; /* Adjust as needed */
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      width: 40px;
+      height: 20px;
+      border-radius: 70%;
+}
+
+.iris1 {
+    position:absolute;
+    top: 114px;
+    left: 92px;
+    background-color: rgba(10, 29, 237, 0.9);
+    width: 15px;
+    height: 15px;
+    border-radius: 40%;
+}
+
+.ojo2 {
+      position: absolute;
+      top: 110Px;
+      left: 180px;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      width: 40px;
+      height: 20px;
+      border-radius: 70%;
+}
+
+.iris2 {
+    position:absolute;
+    top: 114px;
+    left: 192px;
+    background-color: rgba(10, 29, 237, 0.9);
+    width: 15px;
+    height: 15px;
+    border-radius: 40%;
+}
+
+.nariz {
+      position: absolute;
+      top: 140Px;
+      left: 129px;
+      background-color: rgba(150, 87, 87, 0.203);
+      width: 40px;
+      height: 30px;
+      border-radius: 70%;
+      transition: 0.8s; 
+}
+
+.boca {
+      position: absolute;
+      top: 190Px;
+      left: 100px;
+      background-color: rgba(166, 76, 15, 0.199);
+      width: 100px;
+      height: 8px;
+      border-radius: 70%;
+      transition: 0.5s;
+}
+
+.cabeza {
+    margin:20px;
+    background: rgba(241, 198, 198, 0.7);
+    border: 2px solid rgba(241, 198, 198, 0.111);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+    transition: 
+        border-color 0.5s ease, 
+        background-color 0.5s ease, 
+        box-shadow 1s ease;
+}
+
+.face1:hover .ojo1, .face1:hover .ojo2 {
+     background: rgba(0, 0, 0, 0.788);
+     box-shadow: 0 0 5px rgba(255, 0, 0, 0.626);
+     transition: 0.4s;
+}
+
+.face1:hover .boca {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.626);
+    left:86px;
+    width: 130px;
+    height: 8px;
+    transition: 0.5s;
+}
+
+.face1:hover .iris1, .face1:hover .iris2 {
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+.face1:hover .cabeza {
+    box-shadow: 0 0 35px 30px rgba(255, 0, 0, 0.626);
+    transition: 
+    border-color 0.5s ease, 
+    background-color 0.5s ease, 
+    box-shadow 1s ease;
+}
+
+.face1:hover {
+     background-color: rgba(0, 0, 0, 0.711);
+     color: white;
+
+}
+
+.face1:hover .nariz {
+    left: 105px;
+    width: 90px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.788);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.626);
+    transition: 0.8s; 
+}
+
+.face1:hover .ojo1 .ojo2 {
+     background: rgba(0, 0, 0, 0.788);
+     box-shadow: 0 0 5px rgba(255, 0, 0, 0.626);
+     transition: 0.4s;
+}
+
+.face1:hover .boca {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.626);
+    left:86px;
+    width: 130px;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.face1:hover .iris1 .iris2 {
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+.face1:hover .cabeza {
+    box-shadow: 0 0 35px 30px rgba(255, 0, 0, 0.626);
+    transition: 
+    border-color 0.5s ease, 
+    background-color 0.5s ease, 
+    box-shadow 1s ease;
+}
+
+.face1:hover {
+     background-color: rgba(0, 0, 0, 0.711);
+
+}
+
+.face1:hover .nariz {
+    left: 105px;
+    width: 90px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.788);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.626);
+    transition: 0.8s; 
+}
+
+.face2:hover .cabeza {
+    
+    box-shadow: 0 0 35px 30px rgba(255, 251, 7, 0.626);
+    transition: 
+    border-color 0.5s ease, 
+    background-color 0.5s ease, 
+    box-shadow 1s ease;
+}
+
+.face2 .nariz:hover, .boca:hover, .ojo1:hover, .ojo2:hover, .iris1:hover, .iris2:hover {
+    cursor: pointer;
+}
+
+.face2 .nariz:active {
+    background: rgba(255, 0, 0, 0.788);
+    transition: 0.4s;
+    width: 180px;
+    height: 30px;
+
+}
+
+.face2 .boca:hover {
+    background: rgba(0, 0, 0, 0.788);
+    left: 60px;
+    width: 180px;
+    height: 50px;
+    transition: 1s;
+}
+
+.face2 .boca:active, .face1 .boca:active {
+    background: rgba(7, 7, 7, 0.788);
+    height: 9px;
+    transition: 0.1s;
+}
+
+.container2 {
+    position: absolute;
+    background-color: rgba(195, 247, 246, 0.886);
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 12px 9px 30px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    top: 60%;
+    width: 370px;
+    text-align: center;
+   
+}
+
+.menu {
+    position: relative;
+    background-color: rgb(221, 216, 216);
+    box-shadow: 12px 9px 30px rgba(0, 0, 0, 0.6);
+      border: 1px solid rgb(0, 0, 0);
+   
+}
+
+.caja {
+    margin-top: 10px;
+    position: absolute;
+    background-color: rgba(235, 248, 249, 0.8);
+    border-radius: 15px;
+    }
+
+.one {
+    width: 100px;
+    box-shadow: 12px 9px 30px rgba(0, 0, 0, 0.6);
+    transition:
+        border-color 0.1s ease, 
+        background-color 0.1s ease, 
+        box-shadow 1s ease;
+
+}
+
+.two {
+    width: 100px;
+    left: 90px;
+    box-shadow: 12px 9px 30px rgba(0, 0, 0, 0.6);
+}
+
+.three {
+    width: 100px;
+    left: 180px;
+    box-shadow: 12px 9px 30px rgba(0, 0, 0, 0.6);
+
+}
+
+.four {
+    width: 100px;
+    left: 270px;
+    box-shadow: 12px 9px 30px rgba(0, 0, 0, 0.6);
+}
+
+.one:hover {
+    height: 200px;
+    background-color: rgba(235, 248, 249, 0.8);
+    border-radius: 15px;
+    transition:
+        border-color 0.5s ease, 
+        background-color 0.5s ease, 
+        box-shadow 0.5s ease;
+        z-index: 1;
+}
+
+.two:hover {
+     height: 200px;
+           background-color: rgba(235, 248, 249, 0.8);
+    border-radius: 15px;
+    transition:
+        border-color 0.5s ease, 
+        background-color 0.5s ease, 
+        box-shadow 0.5s ease;
+        z-index: 1;
+}
+
+.three:hover {
+    height: 200px;
+            background-color: rgba(235, 248, 249, 0.8);
+    border-radius: 15px;
+    transition:
+        border-color 0.5s ease, 
+        background-color 0.5s ease, 
+        box-shadow 0.5s ease;
+        z-index: 1;
+}
+
+.four:hover {
+    height: 200px;
+            background-color: rgba(235, 248, 249, 0.8);
+    border-radius: 15px;
+    transition:
+        border-color 0.5s ease, 
+        background-color 0.5s ease, 
+        box-shadow 0.5s ease;
+}
+
+
+
+footer {
+    position: absolute;
+    top: 800px;
+
+}
