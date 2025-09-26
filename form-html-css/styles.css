@@ -13,6 +13,9 @@ body {
   margin-bottom: 20px;
 }
 
+.texto {
+  font-weight: bold;
+}
 .tab-button {
   padding: 10px 20px;
   border: none;
@@ -40,6 +43,13 @@ body {
 
 .tab-content.active {
   display: block;
+}
+
+.fecha_ent {
+  display: block;
+  width: 120px;
+  height: 40px;
+
 }
 
 form {

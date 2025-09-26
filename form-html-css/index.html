@@ -17,7 +17,7 @@
   <div class="tab-content active" id="buscar">
     <h2>Buscar / Actualizar</h2>
     <form>
-      <label>ID del artículo:</label>
+      <label class="texto">Codigo del artículo:</label>
       <input type="text" id="buscar-id" />
       <button type="button" class="buscar-btn">Buscar</button>
       <div class="resultado">
@@ -33,15 +33,15 @@
   <div class="tab-content" id="agregar">
     <h2>Agregar Artículo</h2>
     <form id="form-agregar">
-      <label>Fecha de entrada:</label>
-      <input type="date" id="fecha" />
-      <label>ID:</label>
+      <label class="texto">Fecha de entrada:</label>
+      <input type="date" id="fecha" class="fecha_ent"/>
+      <label class="texto">Codigo:</label>
       <input type="text" id="id" />
-      <label>Nombre del artículo:</label>
+      <label class="texto">Nombre del artículo:</label>
       <input type="text" id="nombre-articulo" />
-      <label>Cantidad:</label>
+      <label class="texto">Cantidad:</label>
       <input type="number" id="cantidad-articulo" />
-      <label>Precio:</label>
+      <label class="texto">Precio:</label>
       <input type="number" id="precio-articulo" step="0.01" />
       <button type="submit" class="enviar-btn">Enviar</button>
     </form>
@@ -53,12 +53,12 @@
   <div class="tab-content" id="personalizar">
     <h2>Personalizar Estilo</h2>
     <form>
-      <label>Color de fondo:</label>
-      <input type="color" id="fondo-color" />
-      <label>Color de texto:</label>
-      <input type="color" id="texto-color" />
+      <label class="texto">Color de fondo:</label>
+      <input class="casilla"  type="color" id="fondo-color" />
+      <label class="texto">Color de texto:</label>
+      <input class="casilla" type="color" id="texto-color" />
       <div class="preview">
-        <p>Vista previa de colores seleccionados</p>
+        <p class="texto">Vista previa</p>
       </div>
       <button type="button" class="aplicar-btn">Aplicar</button>
     </form>
