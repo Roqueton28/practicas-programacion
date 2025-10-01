@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;  
+    margin: 0;
+    font-family: sans-serif;
+    background: rgba(213, 212, 211, 0.836);
+    color: rgba(43, 15, 15, 0.6);
+}
+
+ header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+}
+
+div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin: 40px;
+    padding:20px;
+    background: rgb(244, 241, 85);
+    box-shadow: 0px 0px 90px rgba(255, 0, 0, 0.836);
+    transition: border 1s ease;
+}
+
