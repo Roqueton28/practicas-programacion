@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;  
+    margin: 0;
+    font-family: sans-serif;
+    background: rgba(223, 218, 218, 0.519);
+    color: rgba(255, 255, 255,);
+}
+
+img {
+    width: 24%;
+    margin-top: 20px;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+    background: rgba(8, 58, 114, 0.745);
+    color: rgba(255, 255, 255, 0.489);
+}
+
+.contacto {
+    position: absolute;
+    left: 80%;
+
+    }
+
+.idioma {
+    position: absolutE;
+    left: 90%;
+
+}
+
+form {
+    position: absolute;
+    padding: 12px;
+    top: 120px;
+    width: 70%;
+    height: 40%;
+    background: rgb(255, 255, 255);
+    color: rgb(69, 89, 217);
+    font-size: 200%;
+    border-radius: 10px;
+}
+
+input {
+    position: inherit
+}
+
+.usuario {
+    width: 80%;
+    left: 40px;
+    top: 70px;
+}
+.contrasena {
+    width: 80%;
+    left: 40px;
+    top: 100px;
+}
+
+.teclado {
+    font-size: small;
+    position: absolute;
+    left: 320px;
+    top: 100px;
+}
+
+.boton {
+    background-color: aqua;
+    color: rgb(254, 252, 252);
+    border-radius: 6px;
+    bottom: 100px;
+    width: 80px;
+    height: 25px;
+}
+
+
+
+
+
