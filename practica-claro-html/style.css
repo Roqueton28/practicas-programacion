@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: azure;
+  display: flex;
+  flex-direction: column;
+}
+
+.navegacion {
+  width: 100%;
+  background: white;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+
+.segmento li:hover, .opciones li:hover {
+    cursor: pointer;
+}
+
+.segmento, .opciones {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.opciones2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background: rgba(234, 243, 235, 0.882);
+}
+
+.logo1 {
+  width: 100px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.buscar {
+  width: 40px;
+  cursor: pointer;
+  margin-left: 750px;
+}
+
+.miclaro {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: rgba(240, 255, 252, 0.901);
+  cursor: pointer;
+}
+
+.miclaro:hover, .buscar:hover {
+  background-color: rgba(202, 12, 12, 0.7);
+  color: white;
+}
+
+.servicios:hover, .tienda:hover, .soporte:hover  {
+    cursor: pointer;
+    background-color: rgba(202, 12, 12, 0.7);
+    color: white;
+}
+
+.carrete {
+    height: 90%;
+
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.tracks {
+  display: flex;
+  overflow-x:auto;
+  scroll-snap-type: x mandatory;
+}
+
+.tracks img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  object-fit: cover;
+}
+
+.pie-pagina {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(170, 237, 230, 0.956);
+    text-align: center;
+    color: rgba(5, 84, 77, 0.86);
+    padding: 15px;
+}
+
+
