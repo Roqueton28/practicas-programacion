@@ -28,59 +28,140 @@ header {
 .contacto {
     position: absolute;
     left: 80%;
-
     }
 
 .idioma {
-    position: absolutE;
+    position: absolute;
     left: 90%;
 
 }
 
-form {
+.ingreso {
     position: absolute;
-    padding: 12px;
-    top: 120px;
-    width: 70%;
+    padding: 20px;
+    top: 140px;
+    width: 60%;
     height: 40%;
     background: rgb(255, 255, 255);
     color: rgb(69, 89, 217);
-    font-size: 200%;
+    font-size: 180%;
     border-radius: 10px;
 }
 
-input {
-    position: inherit
+.box {
+    display: flex;
+    width: 90%;
+    height: 100px;
+   
+}
+.usuario, .contrasena {
+    position: absolute;
+    width: 52%;
+    height: 25px;
+    margin: 30px;
+}
+.user {
+    height: 20px;
+    width: 20px;
+}
+
+.pass {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    top: 30px;
+    left: -20px;
 }
 
 .usuario {
-    width: 80%;
-    left: 40px;
-    top: 70px;
+    margin-top: 10px;
 }
+
 .contrasena {
-    width: 80%;
-    left: 40px;
-    top: 100px;
+    margin-top: 50px;
 }
 
-.teclado {
-    font-size: small;
+.eye {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    left: 56%;
+}
+
+.carrete{
     position: absolute;
-    left: 320px;
-    top: 100px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    animation: carrete 3s ease;
+    background-color: rgba(230, 209, 209, 0.536);
+}
+ img {
+    max-width: 100%;
+    height: auto;
+    background-color: #ccc;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 10px;
 }
 
+
+
+.opciones {
+    position: absolute;
+    top: 135px;
+    width: 55%;
+    height: 150px;
+}
+
+h6, .boton {
+    font-size: small;
+}
+.teclado {
+    position: inherit;
+    right: 0;  
+    top: -10px ;  
+    font-size: 10px; 
+    text-align: left; 
+}
 .boton {
-    background-color: aqua;
+    position: inherit;
+    right: 0;
+    background-color: rgb(155, 243, 243);
     color: rgb(254, 252, 252);
+    border: none;
     border-radius: 6px;
-    bottom: 100px;
-    width: 80px;
-    height: 25px;
+    top: 35px;
+    width: 110px;
+    height: 30px;
 }
+.olvida {
+    position: inherit;
+    right: 0;
+    color: rgba(5, 75, 197, 0.442);
+    top: 60px;
+}
+.no-usuario {
+    position: inherit;
+    color: rgba(6, 6, 6, 0.519);
+    right: 100px;
+    top: 80px;
+}
+.registro {
+    position: inherit;
+    top: 80px;
+    right: 0;
 
-
-
+}
 
 

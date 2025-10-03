@@ -58,6 +58,8 @@
 
 .latido {
     animation: latido 1.5s infinite;
+    background-color: red;
+    color: white ;
 }
 
 @keyframes latido {
@@ -199,3 +201,52 @@
     }
 
 }
+
+.abr-cer {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    height: 50px;
+    background: rgba(17, 255, 0, 0.879);
+    background-color: rgb(155, 140, 240);
+    color: black;
+    box-shadow: 0px 0px 50px 10px rgba(3, 22, 240, 0.879);
+    animation: abr-cer 3s ease infinite;
+}
+
+@keyframes abr-cer {
+
+    10% {
+        transform: skewY(-54deg);   
+        transition: 0.5s ease;     
+    }
+
+
+    100% {
+        transform: skewY(54deg);
+        box-shadow: black;
+        transition: 0.5s ease; 
+    }
+}
+
+.llenar {
+    background-color:  rgba(255, 242, 0, 0.879) ;
+    box-shadow: 0px 0px 1px 10px rgba(255, 242, 0, 0.879);
+    animation: llenar 1s ease infinite;
+
+}
+
+@keyframes llenar {
+    
+    50% {
+         background: rgba(213, 212, 211, 0.836); 
+    }
+
+}
+
+
+
+
+
